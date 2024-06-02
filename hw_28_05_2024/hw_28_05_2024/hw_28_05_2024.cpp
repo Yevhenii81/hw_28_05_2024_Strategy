@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <vector>
 #include <string>
 using namespace std;
@@ -106,7 +106,5 @@ int main()
     TimeOfDay timeOfDay = TimeOfDay::Dinner;
 
     context.SetPlan(new DinnerStrategy());
-    /*context.setStrategy(new LunchStrategy());
-    context.setStrategy(new DinnerStrategy());*/
     context.cook(refrigerator);
 }
