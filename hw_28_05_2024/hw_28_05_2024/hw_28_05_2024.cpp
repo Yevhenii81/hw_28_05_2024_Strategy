@@ -32,7 +32,7 @@ public:
     virtual ~CookingStrategy() = default;
 };
 
-class BreakfastPlan : public CookingStrategy {
+class BreakfastStrategy : public CookingStrategy {
 public:
     void cook(const Refrigerator& refrigerator) const override {
         if (refrigerator.HasProduct(Product::Bread) && refrigerator.HasProduct(Product::Cheese) && refrigerator.HasProduct(Product::Ham)) {
